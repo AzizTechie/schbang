@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schbang Clone</title>
+  <link rel="stylesheet" href="style.css" />
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="./images/logo animation1.gif" alt="Schbang Logo">
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Culture</a></li>
+      </ul>
+       <div class="mobile-contact">
+      <a href="#contact" class="contact-btn">
+        Contact&nbsp;us&nbsp;&nbsp;<span class="arrow">→</span>
+        <span class="circle-bg"></span>
+      </a>
+    </div>
+    </nav>
+    <div class="header-contact-wrap desktop-contact">
+    <a href="#contact" class="contact-btn">
+        Contact&nbsp;us&nbsp;&nbsp;<span class="arrow">→</span>
+        <span class="circle-bg"></span>
+    </a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+   
+
+
+  </header>
+  <!-- main -->
+   <!-- hero starts -->
+        <section class="hero-section">
+            <h1>Your Creative, Media & Technology <br>Transformation Partner</h1>
+            <p>We're a team of 1000+ Specialists delivering award-winning work for 300+ brands worldwide, 8 years and counting!</p>
+        </section>
+
+   <!-- hero ends -->
+    <div id="custom-cursor"></div>
+
+    <!-- 2nd section -->
+     <section class="hero-marquee">
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <!-- Repeat this set as needed -->
+      <div class="marquee-item">IT'S TIME TO CREATE A SCHBANG</div>
+      <img src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif" alt="dot" class="rotating-icon">
+
+      <div class="marquee-item">IT'S TIME TO CREATE A SCHBANG</div>
+      <img src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif" alt="dot" class="rotating-icon">
+
+      <div class="marquee-item">IT'S TIME TO CREATE A SCHBANG</div>
+      <img src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif" alt="dot" class="rotating-icon">
+    </div>
+  </div>
+</section>
+<!-- 2nd section ends-->
+
+  <!-- 3rd video section starts -->
+   <section class="video-section">
+  <div class="video-wrapper" id="video-wrapper">
+    <iframe
+      id="vimeo-video"
+      src="https://player.vimeo.com/video/1009850695?h=0ef5fe8a95&autoplay=1&loop=1&muted=1&controls=0&background=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+    <div class="video-cursor" id="video-cursor">⏸</div>
+  </div>
+</section>
+
+  <!-- 3rd video section ends -->
+
+  <!-- 4th section starts -->
+   <section class="arrow-section">
+   <div class="arrow-container">
+  <div class="arrow-line"></div>
+  <div class="arrow-head"></div>
+</div>
+ <div class="content-right">
+    <h2>What defines us</h2>
+    <p>
+      We’re brand builders at heart, creators by design, tech enthusiasts in practice, and integrated at our core.
+    </p>
+    <a href="#culture" class="btn-cta">Dive Into Our Culture →</a>
+  </div>
+  </section>
+
+  <!-- 4th section ends -->
+
+   <!-- 5th section starts -->
+    <section class="client-logo-slider">
+  <!-- Top Row: scrolls left -->
+  <div class="logo-row logo-scroll-left">
+    <div class="logo-scroll-track">
+      <img src="images/log01.png" alt="">
+      <img src="images/logo2.png" alt="">
+      <img src="images/logo3.png" alt="">
+      <img src="images/logo4.png" alt="">
+      <img src="images/logo5.png" alt="">
+      <img src="images/logo6.png" alt="">
+      <img src="images/logo7.png" alt="">
+      <img src="images/logo8.png" alt="">
+    </div>
+  </div>
+
+  <!-- Bottom Row: scrolls right -->
+  <div class="logo-row logo-scroll-right">
+    <div class="logo-scroll-track">
+      <img src="images/logo9.png" alt="">
+      <img src="images/logo10.png" alt="">
+      <img src="images/logo11.png" alt="">
+      <img src="images/logo12.png" alt="">
+      <img src="images/logo13.png" alt="">
+    </div>
+  </div>
+</section>
+
+
+ <!-- 6th section -->
+  <section class="trending-articles">
+  <div class="trending-left">
+    <div class="trend-row" data-image="img1">
+      <button class="trend-tag">Blog</button>
+      <h3 class="trend-title">The Reality & Advantages of Account-Based Marketing</h3>
+
+      <span class="trend-time">5 minutes</span>
+    </div>
+    <div class="trend-row" data-image="img2">
+      <button class="trend-tag disabled">Blog</button>
+      <h3 class="trend-title disabled">2025’s Winning Formula for Brand Growth</h3>
+      <span class="trend-time">3 minutes</span>
+    </div>
+    <div class="trend-row" data-image="img3">
+      <button class="trend-tag disabled">Blog</button>
+      <h3 class="trend-title disabled">9 Power Moves to Build Your E-Commerce Business</h3>
+      <span class="trend-time">3 minutes</span>
+    </div>
+  </div>
+
+  <div class="trending-right">
+    <img src="images/img1.png" alt="" class="trend-image active" id="img1">
+    <img src="images/logo10.png" alt="" class="trend-image" id="img2">
+    <img src="images/logo11.png" alt="" class="trend-image" id="img3">
+  </div>
+</section>
+
+
+  <!-- main ends -->
+  
+  <footer class="site-footer">
+  <div class="footer-logo">
+    <img src="./images/Schbang white1.avif" alt=""  class="footer-logo-img">
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img src="./images/linkedin-50.webp" alt="LinkedIn"></a>
+    <a href="#"><img src="./images/instagram-50.webp" alt="Instagram"></a>
+    <a href="#"><img src="./images/youtube-50 (1).webp" alt="YouTube"></a>
+    <a href="#"><img src="./images/facebook-50 (1).webp" alt="Facebook"></a>
+  </div>
+
+  <ul class="footer-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Case Studies</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Privacy</a></li>
+  </ul>
+
+  <div class="footer-bottom">
+    <p>Proudly created in India.</p>
+    <p>All Right Reserved, All Wrong Reversed.</p>
+  </div>
+</footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
